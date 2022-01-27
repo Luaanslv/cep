@@ -1,0 +1,92 @@
+body{
+    background-color:rgb(100, 91, 91);
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-size: 80px;
+    color: #fff;
+    animation: updawn;
+    animation-duration: 2s;
+    animation-direction: reverse; 
+    position: relative; 
+}
+main , button , input{
+    animation: up;
+    animation-duration: 2s;
+    animation-direction: reverse; 
+    position: relative; 
+}
+
+@keyframes updawn {
+    0%{
+        left: 0px; top: 0px;
+    }
+    100%{
+        left:0px; top:-265px;
+    }
+}
+@keyframes up {
+    0%{
+         top: 0px;
+    }
+    100%{
+         top: 500px;
+    }
+}
+.container-input{
+    color: rgb(196, 188, 188);
+    padding: 15px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 1px 3px 8px rgb(100, 91, 91);
+    display: flex;
+}
+i{
+    font-size: 30px;
+    border: transparent;
+}
+button{
+    width:0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left: 1%;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+input{
+    font-size: 20px;
+    outline: none;
+}
+button:hover{
+    transform: scale(1.2);
+}
+main{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main h2{
+    margin: 16px 0;
+    font-size: 39px;
+}
+main span{
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media(max-width:620){
+    .title h1{
+        font-size: 60px;
+    }
+}
